@@ -2,6 +2,7 @@
 import { ViewTransitions } from "astro:transitions";
 import contactimg from "/src/assets/contact.png";
 import Image from "astro/components/Image.astro";
+import "../css/contact.css";
 ---
 
 <!doctype html>
@@ -36,7 +37,7 @@ import Image from "astro/components/Image.astro";
     <main>
       <section id="contact">
         <div class="container">
-          <Image src={contactimg} alt="Contact" class="contactimg"/>
+          <Image src={contactimg} alt="Contact" class="contactimg" />
           <p class="contact-text">
             If you have any questions or want to work together, please feel free
             to contact me:

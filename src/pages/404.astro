@@ -2,6 +2,7 @@
 import { ViewTransitions } from "astro:transitions";
 import lost from "/src/assets/lost.png";
 import Image from "astro/components/Image.astro";
+import "../css/contact.css";
 ---
 
 <!doctype html>
@@ -25,7 +26,7 @@ import Image from "astro/components/Image.astro";
       <div class="container">
         <h2>404 - Page Not Found <i class="fa-solid fa-face-frown"></i></h2>
         <div class="lostimg">
-          <Image src={lost} alt="404 not found" class="flaticon"/>
+          <Image src={lost} alt="404 not found" class="flaticon" />
         </div>
         <p>
           The page you are looking for might have been removed, had its name
