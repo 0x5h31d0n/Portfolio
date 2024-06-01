@@ -1,0 +1,75 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import contactimg from "/src/assets/contact.png";
+import Image from "astro/components/Image.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <ViewTransitions />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/src/css/contact.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Contact Me</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="portfolio">Portfolio</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="contact">
+        <div class="container">
+          <Image src={contactimg} alt="Contact" class="contactimg"/>
+          <p class="contact-text">
+            If you have any questions or want to work together, please feel free
+            to contact me:
+          </p>
+          <br />
+          <div class="handles">
+            <i class="fa-brands fa-linkedin fa-xl"></i>
+            <a
+              href="https://www.linkedin.com/in/sheldon-menezes-8272b124a/"
+              target="_blank">Linkedin</a
+            >
+          </div>
+          <div class="handles">
+            <i class="fa-brands fa-telegram icon fa-xl"></i>
+            <a href="https://t.me/p3nt3st4" target="_blank">Telegram</a>
+          </div>
+          <div class="handles">
+            <i class="fa fa-envelope icon fa-xl" aria-hidden="true"></i>
+            <a href="mailto:samymenezes33@gmail.com">samymenezes33@gmail.com</a>
+          </div>
+          <div class="handles">
+            <i class="fa-solid fa-phone fa-xl"></i>
+            <a href="">+91 8618387647</a>
+          </div>
+          <div class="handles">
+            <i class="fa-brands fa-signal-messenger fa-xl"></i>
+            <a
+              href="https://signal.me/#eu/SMym6KJOSSg9FKY6Dxi6_eFBdQOjhuF8JhacWShzYJv87Dblv6RC5LprahLOWGUL"
+              target="_blank">Signal</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+---
+import { ViewTransitions } from "astro:transitions";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hello this is Sheldon Menezes an Infosec Enthusiast currently pursuing my Computer Science Engineering at SJEC Mangalore"
+    />
+    <title>My Portfolio</title>
+    <ViewTransitions />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <b>0x5h31d0n</b>
+      <div class="container">
+        <h1>Sheldon Menezes</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="portfolio">Portfolio</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

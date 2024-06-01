@@ -1,0 +1,40 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import lost from "/src/assets/lost.png";
+import Image from "astro/components/Image.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <ViewTransitions />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Page not found</title>
+    <link rel="stylesheet" href="/src/css/contact.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h2>404 - Page Not Found <i class="fa-solid fa-face-frown"></i></h2>
+        <div class="lostimg">
+          <Image src={lost} alt="404 not found" class="flaticon"/>
+        </div>
+        <p>
+          The page you are looking for might have been removed, had its name
+          changed or is temporarily unavailable.
+        </p>
+        <br />
+        <i class="fa-solid fa-backward"></i>
+        <a href="/" class="gohome">Go to Home</a>
+      </div>
+    </main>
+  </body>
+</html>
